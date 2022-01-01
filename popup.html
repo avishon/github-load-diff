@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="options">
+        <div class="row checkbox-row">
+            <input type="checkbox" id="open_viewed_files" name="open_viewed_files" checked>
+            <label for="open_viewed_files" class="desc">Include viewed files</label>
+          </div>
+          <div class="row">
+            <div class="desc full">Files to exclude (regex)</div>
+            <input type="text" id="files_to_ignore_regex" name="files_to_ignore_regex" value="\.spec|sem-etoro-ng"> 
+          </div>
+          <button id="load_diff_btn">Load/open files</button>
+      </div> 
+    <script src="popup.js"></script>
+  </body>
+</html>

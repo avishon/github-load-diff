@@ -1,0 +1,29 @@
+{
+    "name": "Github - load all diffs files",
+    "description": "Load all file diffs",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+      "service_worker": "background.js"
+    }, 
+    "content_scripts":[{
+      "matches":["http://*/*", "https://*/*"],
+      "js":["popup.js"]
+    }],
+    "permissions": ["storage", "activeTab", "scripting"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "/images/github-logo-face.png",
+        "32": "/images/github-logo-face.png",
+        "48": "/images/github-logo-face.png",
+        "128": "/images/github-logo-face.png"
+      }
+    },
+    "icons": {
+      "16": "/images/github-logo-face.png",
+      "32": "/images/github-logo-face.png",
+      "48": "/images/github-logo-face.png",
+      "128": "/images/github-logo-face.png"
+    }
+  }
